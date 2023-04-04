@@ -1,0 +1,54 @@
+.p-backBorder {
+  width: 100%;
+  height: 100%;
+  display: block;
+  overflow: hidden;
+  position: relative;
+}
+
+.p-backBorder::before {
+  content: '';
+  position: absolute;
+  right: 3%;
+  left: 3%;
+  display: block;
+  height: 100%;
+  border-right: 1px solid #F1F1F1;
+  border-left: 1px solid #F1F1F1;
+  z-index: -5;
+}
+
+.p-backBorder::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  right: 35%;
+  height: 200%;
+  width: 30%;
+  transform: translateY(-50%);
+  border-right: 1px solid #F1F1F1;
+  border-left: 1px solid #F1F1F1;
+  z-index: -5;
+}
+
+@media screen and (max-width: 1125px) {
+  .p-backBorder::before {
+    right: 10%;
+    left: 10%;
+  }
+
+  .p-backBorder::after {
+    width: 50%;
+    right: 25%;
+  }
+}
+
+@media screen and (max-width: 795px){
+  .p-backBorder::before {
+    border: none;
+  }
+
+  .p-backBorder::after {
+    border: none;
+  }
+}

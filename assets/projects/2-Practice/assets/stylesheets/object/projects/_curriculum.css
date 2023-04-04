@@ -1,0 +1,143 @@
+.p-curriculum {
+  height: 100vh;
+}
+
+.p-curriculum__backGroundText {
+  font-size: 200px;
+  /* display: block; */
+  top: 35%;
+  right: 0;
+  left: 0;
+}
+
+.p-curriculum__mainWrap {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  height: 100vh;
+  align-items: center;
+  z-index: 3;
+}
+
+.p-curriculum__titleWrap {
+  padding-left: 75px;
+  padding-right: 10px;
+  padding-bottom: 85px;
+}
+
+.p-curriculum__title {
+  font-size: 35px;
+  margin-bottom: 20px;
+}
+
+.p-curriculum__text {
+  width: 355px;
+  font-size: 16.5px;
+  font-family: "Montserrat-SemiBold.ttf";
+}
+
+.p-curriculum__swiper {
+  max-width: 850px;
+}
+
+.p-curriculum__swiperWrap {
+  /* width: 100%;
+  height: 850px;
+  overflow: hidden; */
+}
+
+.p-curriculum__imgPc {
+  /* height: 550px; */
+  /* object-fit: cover; */
+  /* object-position: left; */
+  /* position: fixed; */
+  /* position: absolute; */
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.p-curriculum__imgSp {
+  /* height: 550px; */
+  /* object-fit: cover; */
+  /* object-position: left; */
+  /* position: fixed; */
+  /* position: absolute; */
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+@media screen and (max-width: 1125px) {
+  .p-curriculum__backGroundText {
+    display: none;
+  }
+
+  .p-curriculum__titleWrap {
+    position: absolute;
+    top: 25%;
+    z-index: 5;
+  }
+
+  .p-curriculum__title {
+    color: #FFFFFF;
+  }
+
+  .p-curriculum__text {
+    width: 100%;
+    font-size: 14px;
+    color: #FFFFFF;
+  }
+
+  .p-curriculum__swiper {
+    max-width: 100%;
+  }
+
+  .p-curriculum__imgPc {
+    display: block;
+    width: 100%;
+    height: 100vh;
+    filter: brightness(80%);
+    object-position: center;
+  }
+  .p-curriculum__imgSp {
+    /* height: 550px; */
+    /* object-fit: cover; */
+    /* object-position: left; */
+    /* position: fixed; */
+    /* position: absolute; */
+    display: block;
+    width: 100%;
+    height: 100vh;
+    filter: brightness(80%);
+    object-position: center;
+  }
+}
+
+@media screen and (max-width: 795px) {
+  .p-curriculum__titleWrap {
+    top: 30%;
+    left: 10%;
+    padding: 0px;
+    z-index: 5;
+  }
+
+  .p-curriculum__title {
+    font-size: 25px;
+    line-height: 28px;
+  }
+
+  .p-curriculum__text {
+    max-width: 500px;
+  }
+}
+
+@media screen and (max-width: 375px){
+  .p-curriculum__titleWrap {
+    max-width: 280px;
+  }
+}

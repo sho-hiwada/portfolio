@@ -1,0 +1,508 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width,initial-scale=1.0">
+  <meta name="expires" content="604800">
+  <meta name="format-detection" content="email=no,telephone=no,address=no">
+  <title>02 | 2-Practice</title>
+  <meta name="description" content="【03 | 3-Practice】のdescriptionです">
+  <link rel="icon" href="assets/images/common/favicon.ico">
+  <link rel="stylesheet" href="assets/stylesheets/foundation/vendor/swiper/swiper-bundle.min.css">
+  <link rel="stylesheet" href="assets/stylesheets/foundation/vendor/slick/slick.css">
+  <link rel="stylesheet" href="assets/stylesheets/foundation/vendor/slick/slick-theme.css">
+  <link rel="stylesheet" href="assets/stylesheets/app.css">
+  <script type="text/javascript" src="assets/javascripts/lib/jquery.js" defer></script>
+  <script src="assets/javascripts/lib/swiper-bundle.min.js" defer></script>
+  <script src="assets/javascripts/lib/slick.min.js" defer></script>
+  <script type="text/javascript" src="assets/javascripts/index.js" defer></script>
+</head>
+<body>
+  <div class="l-container">
+    <header class="l-header">
+      <div class="p-header">
+        <div class="p-header__title">
+          <div class="p-header__logo">
+            <img src="assets/images/logo-hdr-01.png" alt="ロゴ画像" class="p-header__logoImg">
+          </div>
+          <h1 class="p-header__titleText">カリキュラム</h1>
+        </div>
+        <nav class="p-header__menu u-hidden-sp">
+          <ul class="p-header__menuList">
+            <li class="p-header__menuItem">
+              <a href="#message" class="p-header__menuText">message</a>
+            </li>
+            <li class="p-header__menuItem">
+              <a href="#service" class="p-header__menuText">service</a>
+            </li>
+            <li class="p-header__menuItem">
+              <a href="#member" class="p-header__menuText">member</a>
+            </li>
+            <li class="p-header__menuItem">
+              <a href="#benefit" class="p-header__menuText">benefit</a>
+            </li>
+            <li class="p-header__menuItem p-header__menuItem--subColor">
+              <a href="#contact" class="p-header__menuText">contact</a>
+            </li>
+          </ul>
+        </nav>
+        <div class="p-header__hamburger u-hidden-pc">
+          <input type="checkbox" class="p-header__hamburgerBtn" id="p-header__hamburgerBtn">
+          <label for="p-header__hamburgerBtn" class="p-header__hamburgerIcon">
+            <span class="p-header__hamburgerBar"></span>
+          </label>
+          <ul class="p-header__hamburgerMenu">
+            <li class="p-header__hamburgerItem">
+              <a href="#message" class="p-header__hamburgerText">message</a>
+            </li>
+            <li class="p-header__hamburgerItem">
+              <a href="#service" class="p-header__hamburgerText">service</a>
+            </li>
+            <li class="p-header__hamburgerItem">
+              <a href="#member" class="p-header__hamburgerText">member</a>
+            </li>
+            <li class="p-header__hamburgerItem">
+              <a href="#benefit" class="p-header__hamburgerText">benefit</a>
+            </li>
+            <li class="p-header__hamburgerItem">
+              <a href="#contact" class="p-header__hamburgerText">contact</a>
+            </li>
+          </ul>
+          <div class="p-header__hamburgerClose">
+            <label for="p-header__hamburgerBtn" class="p-header__hamburgerCover"></label>
+          </div>
+        </div>
+      </div>
+    </header>
+    <main>
+      <div class="l-main">
+        <div class="p-backBorder">
+          <section>
+            <div class="p-curriculum">
+              <div class="p-curriculum__inner  c-section__inner">
+                <h2 class="p-curriculum__backGroundText c-section__backGroundText js-display-show is-fadeIn-right">CURRICULUM</h2>
+                <div class="p-curriculum__mainWrap">
+                  <div class="p-curriculum__titleWrap">
+                    <h2 class="p-curriculum__title js-display-show2 is-fadeIn-right">入門カリキュラム<br>HTML・CSS</h2>
+                    <p class="p-curriculum__text js-display-show is-fadeIn-right">入門カリキュラムHTML・CSSの最終課題LPです。これができれば入門カリキュラムHTML・CSSは終了です。</p>
+                  </div>
+                  <div class="p-curriculum__swiper swiper">
+                    <div class="p-curriculum__swiperWrap swiper-wrapper js-display-show is-fadeIn-right">
+                      <div class="p-curriculum__swiperItem swiper-slide">
+                        <img src="assets/images/img-curriculum-02.jpeg" alt="PCヒーローバナーイメージ画像" data-swiper-parallax-x="100%" class="p-curriculum__imgPc">
+                      </div>
+                      <div class="p-curriculum__swiperItem swiper-slide">
+                        <img src="assets/images/img-curriculum-01.jpeg" alt="PCヒーローバナーイメージ画像" data-swiper-parallax-x="100%" class="p-curriculum__imgSp">
+                      </div>
+                      <!-- <source media="(1126px > width > 795px)" srcset="assets/images/img-curriculum-02.jpeg" class="p-curriculum__imgSp">
+                      <img src="assets/images/img-curriculum-01.jpeg" alt="ヒーローバナーイメージ画像" class="p-curriculum__imgPc"> -->
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+          <section>
+            <div class="p-temporary">
+              <div class="p-temporary__inner">
+                <p class="p-temporary__text">
+                本課題は、JS及びCSSアニメーションの挙動を取り除いた、静的LPとなっております。<br>
+                先の課題で、本課題を再利用します。
+                </p>
+              </div>
+            </div>
+          </section>
+          <section>
+            <div id="message" class="p-message">
+              <div class="p-message__inner  c-section__inner">
+                <div class="p-message__backGround c-section__backGround js-display-show is-fadeIn-up">
+                  <h2 class="p-message__backTitle">OUR<br>MESSAGE</h2>
+                </div>
+                <div class="p-message__titleWrap c-section">
+                  <div class="p-message__head c-section__head">
+                    <h3 class="p-message__headNumber c-section__headNumber">01</h3>
+                    <h3 class="p-message__headTitle c-section__headTitle">Our&nbsp;message</h3>
+                  </div>
+                  <div class="p-message__body c-section__body">
+                    <p class="p-message__bodyTitle c-section__bodyTitle">入門カリキュラムHTML・CSSを終えた方へ</p>
+                    <p class="p-message__bodyText c-section__bodyText js-display-show is-fadeIn-up">受験生の皆さん、ここまで一旦お疲れ様でした。</p>
+                    <p class="p-message__bodyText c-section__bodyText js-display-show is-fadeIn-up">
+                    スムーズに進めた方・時間がかかった方、何度も指摘されて心が折れそうになった方、いろいろいると思いますが、まずはここまでこれたことに自信を持ってください。（この課題でＯＫもらったら持ってください…！）<br>
+                    今までも、ポインターから指摘されたこと一つ一つが、必ず将来に生きることだと思っています。
+                    </p>
+                    <p class="p-message__bodyText c-section__bodyText js-display-show is-fadeIn-up">
+                    まだまだ先は長いですが、本課題を終えることで、HTML・CSSの基本だけでなく、「調べ・考え・論じる」ことの重要性と、問題解決能力の根本を理解できたと思っています。
+                    </p>
+                    <p class="p-message__bodyText c-section__bodyText js-display-show is-fadeIn-up">
+                    ここまで学んだことで、静的なサイト制作は一人称でできるようになったと思っていますが、まだまだ満足せずにさらなるスキルの向上を目指していきましょう！
+                    </p>
+                  </div>
+                  <p class="p-message__logoText js-display-show is-fadeIn-up">all of the pointers</p>
+                </div>
+              </div>
+            </div>
+          </section>
+          <section>
+            <div id="service" class="p-service">
+              <div class="p-service__inner c-section__inner">
+                <div class="p-service__backGround c-section__backGround">
+                  <h2 class="p-service__backGroundText c-section__backGroundText">Service</h2>
+                </div>
+                <div class="p-service__mainWrap c-section__mainWrap">
+                  <div class="p-service__titleWrap c-section__titleBox">
+                    <div class="p-service__head c-section__head">
+                      <h3 class="p-service__headNumber c-section__headNumber">02</h3>
+                      <h3 class="p-service__headTitle c-section__headTitle">Service</h3>
+                    </div>
+                    <div class="p-service__body c-section__body">
+                      <p class="p-service__bodyTitle c-section__bodyTitle">サービスタイトルテキスト</p>
+                      <p class="p-service__bodyText c-section__bodyText">
+                      サービステキストサービステキストサービステキストサービステキストサービステキストサービステキストサービステキストサービステキストサービステキストサービステキストサービステキストサービステキスト
+                      </p>
+                      <div class="p-service__listBox">
+                        <ul class="p-service__list">
+                          <li class="p-service__item js-display-show is-fadeIn-up">
+                            <img src="assets/images/img-service-01.png" alt="サービス画像サンプル１" class="p-service__img">
+                          </li>
+                          <li class="p-service__item js-display-show is-fadeIn-up">
+                            <img src="assets/images/img-service-01.png" alt="サービス画像サンプル１" class="p-service__img">
+                          </li>
+                          <li class="p-service__item js-display-show is-fadeIn-up">
+                            <img src="assets/images/img-service-01.png" alt="サービス画像サンプル１" class="p-service__img">
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="p-service__main">
+                    <ul class="p-service__cardList">
+                      <li class="p-service__card">
+                        <div class="p-service__cardHead">
+                          <img src="assets/images/img-service-02.png" alt="サービス画像サンプル２" class="p-service__cardImg">
+                        </div>
+                        <div class="p-service__cardBody p-service__cardRight">
+                          <div>
+                            <p class="p-service__cardTitle">〇〇〇〇サービス</p>
+                            <p class="p-service__cardText">
+                            サービステキストサービステキストサービステキストサービステキストサービステキストサービステキストサービステキストサービステキストサービステキストサービステキストサービステキスト
+                            </p>
+                          </div>
+                        </div>
+                      </li>
+                      <li class="p-service__card">
+                        <div class="p-service__cardHead">
+                          <img src="assets/images/img-service-02.png" alt="サービス画像サンプル２" class="p-service__cardImg">
+                        </div>
+                        <div class="p-service__cardBody p-service__cardLeft">
+                          <div>
+                            <p class="p-service__cardTitle">〇〇〇〇サービス</p>
+                            <p class="p-service__cardText">
+                            サービステキストサービステキストサービステキストサービステキストサービステキストサービステキストサービステキストサービステキストサービステキストサービステキストサービステキスト
+                            </p>
+                          </div>
+                        </div>
+                      </li>
+                      <li class="p-service__card">
+                        <div class="p-service__cardHead">
+                          <img src="assets/images/img-service-02.png" alt="サービス画像サンプル２" class="p-service__cardImg">
+                        </div>
+                        <div class="p-service__cardBody p-service__cardRight">
+                          <div>
+                            <p class="p-service__cardTitle">〇〇〇〇サービス</p>
+                            <p class="p-service__cardText">
+                            サービステキストサービステキストサービステキストサービステキストサービステキストサービステキストサービステキストサービステキストサービステキストサービステキストサービステキスト
+                            </p>
+                          </div>
+                        </div>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+          <section>
+            <div id="member" class="p-members">
+              <div class="p-members__inner c-section__inner">
+                <div class="p-members__titleWrap c-section__titleBox">
+                  <div class="p-members__head c-section__head">
+                    <h3 class="p-members__headNumber c-section__headNumber">03</h3>
+                    <h3 class="p-members__headTitle c-section__headTitle">Members</h3>
+                  </div>
+                  <div class="p-members__body c-section__body">
+                    <p class="p-members__bodyTitle c-section__bodyTitle">ポインター紹介</p>
+                    <p class="p-members__bodyText c-section__bodyText">
+                    専門知識と技能を備えたポインターが、<br>
+                    "まごころ"込めて提供させていただきます。
+                    </p>
+                  </div>
+                </div>
+                <div class="p-members__main">
+                  <ul class="p-members__panelList">
+                    <li class="p-members__panel">
+                      <div class="p-members__panelHead">
+                        <img src="assets/images/img-members-01.png" alt="メンバー画像" class="p-members__panelImg">
+                      </div>
+                      <div class="p-members__panelBody">
+                        <p class="p-members__panelName">白藤&nbsp;卓也</p>
+                        <p class="p-members__panelText">
+                        趣味はガンプラとピアノです。<br>
+                        Webアプリはだいたいなんでも作れます。<br>
+                        よろしくお願いします。
+                        </p>
+                      </div>
+                    </li>
+                    <li class="p-members__panel">
+                      <div class="p-members__panelHead">
+                        <img src="assets/images/img-members-01.png" alt="メンバー画像" class="p-members__panelImg">
+                      </div>
+                      <div class="p-members__panelBody">
+                        <p class="p-members__panelName">飯村&nbsp;拓哉</p>
+                        <p class="p-members__panelText">カリキュラムに対する情熱は誰にも負けません。</p>
+                      </div>
+                    </li>
+                    <li class="p-members__panel">
+                      <div class="p-members__panelHead">
+                        <img src="assets/images/img-members-01.png" alt="メンバー画像" class="p-members__panelImg">
+                      </div>
+                      <div class="p-members__panelBody">
+                        <p class="p-members__panelName">佐藤&nbsp;大地</p>
+                        <p class="p-members__panelText">受験者のことを一番に考えた指導を心がけています。</p>
+                      </div>
+                    </li>
+                    <li class="p-members__panel">
+                      <div class="p-members__panelHead">
+                        <img src="assets/images/img-members-01.png" alt="メンバー画像" class="p-members__panelImg">
+                      </div>
+                      <div class="p-members__panelBody">
+                        <p class="p-members__panelName">竹下&nbsp;徹</p>
+                        <p class="p-members__panelText">ポインター陣の影の実力者です。</p>
+                      </div>
+                    </li>
+                    <li class="p-members__panel">
+                      <div class="p-members__panelHead">
+                        <img src="assets/images/img-members-01.png" alt="メンバー画像" class="p-members__panelImg">
+                      </div>
+                      <div class="p-members__panelBody">
+                        <p class="p-members__panelName">関口&nbsp;貴大</p>
+                        <p class="p-members__panelText">みんなと一緒に成長していきたいです。</p>
+                      </div>
+                    </li>
+                    <li class="p-members__panel">
+                      <div class="p-members__panelHead">
+                        <img src="assets/images/img-members-01.png" alt="メンバー画像" class="p-members__panelImg">
+                      </div>
+                      <div class="p-members__panelBody">
+                        <p class="p-members__panelName">吉田&nbsp;薫史</p>
+                        <p class="p-members__panelText">私の半分は"まごころ"でできています。</p>
+                      </div>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </section>
+          <section>
+            <div id="benefit" class="p-benefit">
+              <div class="p-benefit__inner c-section__inner">
+                <div class="p-benefit__backGround c-section__backGround">
+                  <h2 class="p-benefit__backGroundText c-section__backGroundText">Benefit</h2>
+                </div>
+                <div class="p-benefit__mainWrap  c-section__mainWrap">
+                  <div class="p-benefit__titleWrap c-section__titleBox">
+                    <div class="p-benefit__head c-section__head">
+                      <h3 class="p-benefit__headNumber c-section__headNumber">04</h3>
+                      <h3 class="p-benefit__headTitle c-section__headTitle">Benefit</h3>
+                    </div>
+                    <div class="p-benefit__body c-section__body">
+                      <p class="p-benefit__bodyTitle c-section__bodyTitle">カリキュラム受講のメリット</p>
+                      <p class="p-benefit__bodyText c-section__bodyText">実務経験豊富なエンジニアの指導を受け、働きながら学べます。</p>
+                    </div>
+                  </div>
+                  <div class="p-benefit__main">
+                    <ul class="p-benefit__boxList">
+                      <li class="p-benefit__box js-display-show is-fadeIn-up">
+                        <p class="p-benefit__boxTitle">対面ではなくオンラインでカリキュラムを受けられる</p>
+                        <div class="p-benefit__boxHead">
+                          <img src="assets/images/img-benefit-01.png" alt="アイコン画像" class="p-benefit__boxImg">
+                        </div>
+                        <p class="p-benefit__boxText">全てのやりとりをオンラインで進めていくので、わざわざ移動する必要はありません。</p>
+                      </li>
+                      <li class="p-benefit__box js-display-show is-fadeIn-up">
+                        <p class="p-benefit__boxTitle">従来のエンジニア教育サービスより安価で利用可能</p>
+                        <div class="p-benefit__boxHead">
+                          <img src="assets/images/img-benefit-02.png" alt="アイコン画像" class="p-benefit__boxImg">
+                        </div>
+                        <p class="p-benefit__boxText">オンライン対応が主となるため、一般的なエンジニア教育サービスより安価で提供しています。</p>
+                      </li>
+                      <li class="p-benefit__box js-display-show is-fadeIn-up">
+                        <p class="p-benefit__boxTitle">年齢制限なし</p>
+                        <div class="p-benefit__boxHead">
+                          <img src="assets/images/img-benefit-03.png" alt="アイコン画像" class="p-benefit__boxImg">
+                        </div>
+                        <p class="p-benefit__boxText">向上心さえあれば、何度でも受講可能です。</p>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+          <section>
+            <div class="p-location">
+              <div class="p-location__inner c-section__inner">
+                <div class="p-location__backGround c-section__backGround">
+                  <h2 class="p-location__backGroundText c-section__backGroundText">Location</h2>
+                </div>
+                <div class="p-location__mainWrap  c-section__mainWrap">
+                  <div class="p-location__titleWrap c-section__titleBox">
+                    <div class="p-location__head c-section__head">
+                      <h3 class="p-location__headNumber c-section__headNumber">05</h3>
+                      <h3 class="p-location__headTitle c-section__headTitle">Location</h3>
+                    </div>
+                    <div class="p-location__body c-section__body">
+                      <p class="p-location__bodyText c-section__bodyText">
+                      〒&nbsp;150-0041<br>
+                      東京都渋谷区神南1-20-2&nbsp;第一清水ビル4F
+                      </p>
+                    </div>
+                  </div>
+                  <div class="p-location__flame">
+                    <iframe class="p-location__map"
+                      src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3241.6109641714897!2d139.69799021568366!3d35.661955480198735!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x60188ca88ae1bdff%3A0x6a162b1b76d106f!2z44CSMTUwLTAwNDEg5p2x5Lqs6YO95riL6LC35Yy656We5Y2X77yR5LiB55uu77yS77yQ4oiS77ySIOa4heawtOODk-ODqyA0Zg!5e0!3m2!1sja!2sjp!4v1660653961494!5m2!1sja!2sjp"
+                      width="800" height="600" style="border:0;" allowfullscreen="" loading="lazy"
+                      referrerpolicy="no-referrer-when-downgrade"></iframe>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+          <section>
+            <div class="p-news">
+              <div class="p-news__inner c-section__inner">
+                <div class="p-news__backGround c-section__backGround">
+                  <h2 class="p-news__backGroundText c-section__backGroundText">NEWS</h2>
+                </div>
+                <div class="p-news__mainWrap  c-section__mainWrap">
+                  <div class="p-news__titleWrap c-section__titleBox">
+                    <div class="p-news__head c-section__head">
+                      <h3 class="p-news__headNumber c-section__headNumber">06</h3>
+                      <h3 class="p-news__headTitle c-section__headTitle">News</h3>
+                    </div>
+                    <div class="p-news__body c-section__body">
+                      <p class="p-news__bodyTitle c-section__bodyTitle">お知らせ</p>
+                    </div>
+                  </div>
+                  <div class="p-news__main">
+                    <ul class="p-news__list">
+                      <li class="p-news__item js-display-show is-fadeIn-up">
+                        <time datetime="2015-03-11" class="p-news__data">2015.03.11</time>
+                        <p class="p-news__text">株式会社MAISON&nbsp;MARCが設立しました。</p>
+                      </li>
+                      <li class="p-news__item js-display-show is-fadeIn-up">
+                        <time datetime="2017-10-01" class="p-news__data">2017.10.01</time>
+                        <p class="p-news__text">本社を港区神谷町に移転しました。</p>
+                      </li>
+                      <li class="p-news__item js-display-show is-fadeIn-up">
+                        <time datetime="2019-04-01" class="p-news__data">2019.04.01</time>
+                        <p class="p-news__text">本社を新宿区四谷に移転しました。</p>
+                      </li>
+                      <li class="p-news__item js-display-show is-fadeIn-up">
+                        <time datetime="2020-10-01" class="p-news__data">2020.10.01</time>
+                        <p class="p-news__text">本社を渋谷区神南に移転しました。</p>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+          <section>
+            <div id="contact" class="p-contact">
+              <div class="p-contact__inner c-section__inner">
+                <div class="p-contact__backGround c-section__backGround">
+                  <h2 class="p-contact__backGroundText c-section__backGroundText">CONTACT</h2>
+                </div>
+                <div class="p-contact__mainWrap  c-section__mainWrap">
+                  <div class="p-contact__titleWrap c-section__titleBox">
+                    <div class="p-contact__head c-section__head">
+                      <h3 class="p-contact__headNumber c-section__headNumber">07</h3>
+                      <h3 class="p-contact__headTitle c-section__headTitle">Contact</h3>
+                    </div>
+                    <div class="p-contact__body c-section__body">
+                      <p class="p-contact__bodyTitle c-section__bodyTitle">お問い合わせ</p>
+                    </div>
+                  </div>
+                  <div class="p-contact__main">
+                    <form action="confirm.php" method="post" name="form" class="p-contact__form">
+                      <ul class="p-contact__list">
+                        <li class="p-contact__item">
+                          <label class="p-contact__label">お問い合わせ項目</label>
+                          <div class="p-contact__select">
+                            <select class="p-contact__selectItem" name="item">
+                              <option value="項目１">項目１</option>
+                              <option value="項目２">項目２</option>
+                              <option value="項目３">項目３</option>
+                            </select>
+                          </div>
+                        </li>
+                        <li class="p-contact__item">
+                          <label class="p-contact__label">お名前<span class="p-contact__required">必須</span></label>
+                          <input class="p-contact__input" type="text" name="name" placeholder="" value="" required="">
+                          <span class="p-contact__error" aria-hidden="true">必須項目です入力してください</span>
+                        </li>
+                        <li class="p-contact__item">
+                          <label class="p-contact__label">会社名<span class="p-contact__required">必須</span></label>
+                          <input class="p-contact__input" type="text" name="name" placeholder="" value="" required="">
+                          <span class="p-contact__error">必須項目です入力してください</span>
+                        </li>
+                        <li class="p-contact__item">
+                          <label class="p-contact__label">会社URL</label>
+                          <input class="p-contact__input" type="url" name="name" placeholder="" value="">
+                        </li>
+                        <li class="p-contact__item">
+                          <label class="p-contact__label">メールアドレス<span class="p-contact__required">必須</span></label>
+                          <input class="p-contact__input" type="email" name="name" placeholder="" value="" required="">
+                          <span class="p-contact__error">必須項目です入力してください</span>
+                        </li>
+                        <li class="p-contact__item">
+                          <label class="p-contact__label">電話番号</label>
+                          <input class="p-contact__input" type="tel" name="tel" pattern="[\d\-]*" placeholder=""
+                            value="">
+                        </li>
+                        <li class="p-contact__item">
+                          <label class="p-contact__label">お問い合わせ内容</label>
+                          <textarea class="p-contact__textArea" name="content" rows="5" placeholder=""></textarea>
+                        </li>
+                        <li class="p-contact__item">
+                          <label class="p-contact__label">カリキュラムを知ったきっかけ</label>
+                          <div class="p-contact__select">
+                            <select class="p-contact__selectItem" name="item">
+                              <option value="項目１">項目１</option>
+                              <option value="項目２">項目２</option>
+                              <option value="項目３">項目３</option>
+                            </select>
+                          </div>
+                        </li>
+                        <li class="p-contact__item">
+                          <input class="p-contact__button" type="submit" value="確認画面へ">
+                        </li>
+                      </ul>
+                    </form>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+        </div>
+      </div>
+    </main>
+    <footer class="l-footer">
+      <div class="p-footer">
+        <p class="p-footer__copyright">&copy;株式会社MAISON&nbsp;MARC</p>
+      </div>
+    </footer>
+  </div>
+</body>
+</html>

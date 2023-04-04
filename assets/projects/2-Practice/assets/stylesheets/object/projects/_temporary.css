@@ -1,0 +1,37 @@
+.p-temporary {
+  max-width: 1500px;
+  text-align: center;
+}
+
+.p-temporary__inner {
+  background-color: #AD7F01;
+  padding: 10px 0;
+}
+
+.p-temporary__text {
+  font-size: 18.5px;
+  color: #FFFFFF;
+}
+
+@media screen and (max-width: 795px) {
+  .p-temporary__inner {
+    padding: 15px;
+  }
+
+    .p-temporary__text {
+      max-width: 560px;
+      font-size: 26px;
+      margin: 0 auto;
+  }
+}
+
+@media screen and (max-width: 375px) {
+  .p-temporary__inner {
+    padding: 15px 0;
+  }
+  
+  .p-temporary__text {
+    width: 250px;
+    font-size: 12px;
+  }
+}

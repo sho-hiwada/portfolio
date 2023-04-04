@@ -1,0 +1,382 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--=============== FAVICON ===============-->
+    <link rel="shortcut icon" href="assets/images/favicon.png" type="image/x-icon">
+    <!--=============== REMIX ICONS ===============-->
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
+    <!--=============== CSS ===============-->
+    <link rel="stylesheet" href="assets/stylesheets/app.css">
+    <title>Portfolio website - Sho Hiwada</title>
+</head>
+
+<body>
+    <!--=============== HEADER ===============-->
+    <header class="header" id="header">
+        <nav class="p-header__nav c-container">
+            <div class="c-button-3d">
+                <label class="p-header__button-snow">
+                    <input type="checkbox" name="check" id="js-snow-button">
+                    <span></span>
+                    <i class="ri-snowy-line p-header__theme-change"></i>
+                </label>
+            </div>
+            <div class="p-header__nav-menu">
+                <ul class="p-header__nav-list">
+                    <li class="p-header__nav-item">
+                        <a href="#top" class="p-header__nav-link">
+                            <i class="ri-home-line"></i>
+                            <span>Top</span>
+                        </a>
+                    </li>
+                    <li class="p-header__nav-item">
+                        <a href="#skill" class="p-header__nav-link">
+                            <i class="ri-file-cloud-line"></i>
+                            <span>Skills</span>
+                        </a>
+                    </li>
+                    <li class="p-header__nav-item">
+                        <a href="#contact" class="p-header__nav-link">
+                            <i class="ri-profile-line"></i>
+                            <span>Contact</span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <!-- Theme change button -->
+            <div class="p-header__theme-group">
+                <i class="ri-moon-line p-header__theme-change" id="js-theme-button"></i>
+            </div>
+            <!-- <div class="c-button-theme">
+                <label>
+                    <input type="checkbox">
+                    <span></span>
+                    <text>
+                        <i class="ri-sun-line p-header__theme-change" id="js-theme-button"></i>
+                    </text>
+                    <text>
+                        <i class="ri-moon-line p-header__theme-change" id="js-theme-button"></i>
+                    </text>
+                </label>
+            </div> -->
+        </nav>
+    </header>
+    <!--=============== PROFILE ===============-->
+    <section class="p-profile c-container" id="top">
+        <div class="p-profile__container c-grid">
+            <div class="p-profile__data">
+                <div class="p-profile__border">
+                    <div class="p-profile__perfil">
+                        <img src="assets/images/_profil.jpg" alt="">
+                    </div>
+                </div>
+                <h2 class="p-profile__name">Sho Hiwada</h2>
+                <h3 class="p-profile__profession">エンジニア</h3>
+                <ul class="p-profile__social">
+                    <a href="https://www.twitter.com/" target="_blank" class="p-profile__social-link">
+                        <i class="ri-twitter-line"></i>
+                    </a>
+                    <a href="https://www.instagram.com/" target="_blank" class="p-profile__social-link">
+                        <i class="ri-instagram-line"></i>
+                    </a>
+                    <a href="https://www.youtube.com/" target="_blank" class="p-profile__social-link">
+                        <i class="ri-youtube-line"></i>
+                    </a>
+                    <a href="https://github.com/" target="_blank" class="p-profile__social-link">
+                        <i class="ri-github-line"></i>
+                    </a>
+                </ul>
+            </div>
+            <div class="p-profile__info">
+                <div class="p-profile__info-group">
+                    <h3 class="p-profile__info-number">5年</h3>
+                    <p class="p-profile__info-description">不動産業界勤務</p>
+                </div>
+                <div class="p-profile__info-group">
+                    <h3 class="p-profile__info-number">111</h3>
+                    <p class="p-profile__info-description">サンプル</p>
+                </div>
+                <div class="p-profile__info-group">
+                    <h3 class="p-profile__info-number">222</h3>
+                    <p class="p-profile__info-description">サンプル２</p>
+                </div>
+            </div>
+            <div class="p-profile__buttons">
+                <a download="assets/images/skill sheet.pdf" href="" class="c-button">
+                    DownLoad SV
+                    <i class="ri-download-line"></i>
+                </a>
+                <div class="p-profile__buttons-small">
+                    <a href="#" target="_blank" class="c-button c-button-small c-button__gary">
+                        <i class="ri-whatsapp-line"></i>
+                    </a>
+                    <a href="" target="_blank" class="c-button c-button-small c-button__gary">
+                        <i class="ri-message-3-line"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--=============== CANVAS ===============-->
+    <div id="particles-js" height="0" class="snow-js is-snow">
+        <canvas id="canvas"> Canvas not suppoted. </canvas>
+    </div>
+    <!--=============== MAIN ===============-->
+    <main class="main">
+        <section class="p-filters c-container c-section" id="skill">
+            <!--=============== FILTERS TABS ===============-->
+            <ul class="p-filters__content">
+                <button class="p-filters__button js-tab-active" data-target="#projects"> プロジェクト </button>
+                <button class="p-filters__button" data-target="#skills"> スキル </button>
+            </ul>
+            <div class="p-filters__sections">
+                <!--=============== PROJECTS ===============-->
+                <div class="p-filters__projects-content c-grid p-filters__active" data-content id="projects">
+                    <article class="p-filters__projects-card">
+                        <img src="assets/images/projects01.jpeg" alt="" class="p-filters__projects-img">
+                        <div class="p-filters__projects-modal">
+                            <div>
+                                <span class="p-filters__projects-subtitle">カリキュラム HP</span>
+                                <h3 class="p-filters__projects-title">Practice Site</h3>
+                                <a href="assets/projects/2-Practice/index.html" target="_blank" class="p-filters__projects-button c-button c-button-small">
+                                    <i class="ri-link"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </article>
+                    <article class="p-filters__projects-card">
+                        <img src="assets/images/projects02.jpeg" alt="" class="p-filters__projects-img">
+                        <div class="p-filters__projects-modal">
+                            <div>
+                                <span class="p-filters__projects-subtitle">美容室 HP</span>
+                                <h3 class="p-filters__projects-title">Payment Site</h3>
+                                <a href="assets/projects/美容室WEBサイト/responsive_original/index.html" target="_blank" class="p-filters__projects-button c-button c-button-small">
+                                    <i class="ri-link"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </article>
+                    <article class="p-filters__projects-card">
+                        <img src="assets/images/projects03.jpeg" alt="" class="p-filters__projects-img">
+                        <div class="p-filters__projects-modal">
+                            <div>
+                                <span class="p-filters__projects-subtitle">不動産 HP</span>
+                                <h3 class="p-filters__projects-title">Payment Site</h3>
+                                <a href="assets/projects/不動産WEBサイト/index.html" target="_blank" class="p-filters__projects-button c-button c-button-small">
+                                    <i class="ri-link"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </article>
+                    <article class="p-filters__projects-card">
+                        <img src="assets/images/projects04.jpeg" alt="" class="p-filters__projects-img">
+                        <div class="p-filters__projects-modal">
+                            <div>
+                                <span class="p-filters__projects-subtitle">高級車販売店 HP</span>
+                                <h3 class="p-filters__projects-title">Payment Site</h3>
+                                <a href="assets/projects/車WEBサイト/index.html" target="_blank" class="p-filters__projects-button c-button c-button-small">
+                                    <i class="ri-link"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </article>
+                    <article class="p-filters__projects-card">
+                        <img src="assets/images/projects05.jpeg" alt="" class="p-filters__projects-img">
+                        <div class="p-filters__projects-modal">
+                            <div>
+                                <span class="p-filters__projects-subtitle">カフェ HP</span>
+                                <h3 class="p-filters__projects-title">WordPress Site</h3>
+                                <a href="http://localhost:8888/wordpress/home/" target="_blank" class="p-filters__projects-button c-button c-button-small">
+                                    <i class="ri-link"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </article>
+                    <article class="p-filters__projects-card">
+                        <img src="assets/images/projects06.png" alt="" class="p-filters__projects-img">
+                        <div class="p-filters__projects-modal">
+                            <div>
+                                <span class="p-filters__projects-subtitle">JavaScript ゲーム</span>
+                                <h3 class="p-filters__projects-title">Payment Site</h3>
+                                <a href="assets/projects/JavaScript_Game/index.html" target="_blank" class="p-filters__projects-button c-button c-button-small">
+                                    <i class="ri-link"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+                <!--=============== SKILLS ===============-->
+                <div class="p-filters__skills-content c-grid" data-content id="skills">
+                    <div class="p-fileters__skills-area">
+                        <h3 class="p-filters__skills-title"> フロントエンド </h3>
+                        <div class="p-filters__skills-box">
+                            <div class="p-filters__skills-group">
+                                <div class="p-filters__skills-data">
+                                    <i class="ri-checkbox-circle-line"></i>
+                                    <div>
+                                        <h3 class="p-filters__skills-name">HTML</h3>
+                                        <span class="p-filters__skills-level">Basic</span>
+                                    </div>
+                                </div>
+                                <div class="p-filters__skills-data">
+                                    <i class="ri-checkbox-circle-line"></i>
+                                    <div>
+                                        <h3 class="p-filters__skills-name">CSS</h3>
+                                        <span class="p-filters__skills-level">Advanced</span>
+                                    </div>
+                                </div>
+                                <div class="p-filters__skills-data">
+                                    <i class="ri-checkbox-circle-line"></i>
+                                    <div>
+                                        <h3 class="p-filters__skills-name">JavaScript</h3>
+                                        <span class="p-filters__skills-level">Intermediate</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="p-filters__skills-group">
+                                <div class="p-filters__skills-data">
+                                    <i class="ri-checkbox-circle-line"></i>
+                                    <div>
+                                        <h3 class="p-filters__skills-name">React</h3>
+                                        <span class="p-filters__skills-level">Intermediate</span>
+                                    </div>
+                                </div>
+                                <div class="p-filters__skills-data">
+                                    <i class="ri-checkbox-circle-line"></i>
+                                    <div>
+                                        <h3 class="p-filters__skills-name">Bootstrap</h3>
+                                        <span class="p-filters__skills-level">Intermediate</span>
+                                    </div>
+                                </div>
+                                <div class="p-filters__skills-data">
+                                    <i class="ri-checkbox-circle-line"></i>
+                                    <div>
+                                        <h3 class="p-filters__skills-name">Git</h3>
+                                        <span class="p-filters__skills-level">Intermediate</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="p-fileters__skills-area">
+                        <h3 class="p-filters__skills-title"> バックエンド </h3>
+                        <div class="p-filters__skills-box">
+                            <div class="p-filters__skills-group">
+                                <div class="p-filters__skills-data">
+                                    <i class="ri-checkbox-circle-line"></i>
+                                    <div>
+                                        <h3 class="p-filters__skills-name">PHP</h3>
+                                        <span class="p-filters__skills-level">Intermediate</span>
+                                    </div>
+                                </div>
+                                <div class="p-filters__skills-data">
+                                    <i class="ri-checkbox-circle-line"></i>
+                                    <div>
+                                        <h3 class="p-filters__skills-name">MySQL</h3>
+                                        <span class="p-filters__skills-level">Advanced</span>
+                                    </div>
+                                </div>
+                                <div class="p-filters__skills-data">
+                                    <i class="ri-checkbox-circle-line"></i>
+                                    <div>
+                                        <h3 class="p-filters__skills-name">Firebase</h3>
+                                        <span class="p-filters__skills-level">Intermediate</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="p-filters__skills-group">
+                                <div class="p-filters__skills-data">
+                                    <i class="ri-checkbox-circle-line"></i>
+                                    <div>
+                                        <h3 class="p-filters__skills-name">Python</h3>
+                                        <span class="p-filters__skills-level">Basic</span>
+                                    </div>
+                                </div>
+                                <div class="p-filters__skills-data">
+                                    <i class="ri-checkbox-circle-line"></i>
+                                    <div>
+                                        <h3 class="p-filters__skills-name">Node Js</h3>
+                                        <span class="p-filters__skills-level">Intermediate</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!--=============== CONTACT ===============-->
+        <section class="p-contact c-section" id="contact">
+            <div class="p-contact__container c-container c-grid">
+                <div class="p-contact__content">
+                    <h3 class="p-contact__content-title">お問い合わせ</h3>
+                    <div class="p-contact__content-info">
+                        <div class="p-contact__content-card">
+                            <i class="ri-mail-send-line p-contact__content-cardIcon"></i>
+                            <h3 class="p-contact__content-cardTitle">Email</h3>
+                            <span class="p-contact__content-cardData">hiwasho@icloud.com</span>
+                            <a href="mailto:hiwasho@icloud.com" target="_blank" class="p-contact__content-button">
+                                Write me
+                                <i class="ri-arrow-right-line p-contact__content-buttonIcon"></i>
+                            </a>
+                        </div>
+                        <div class="p-contact__content-card">
+                            <i class="ri-whatsapp-line p-contact__content-cardIcon"></i>
+                            <h3 class="p-contact__content-cardTitle">Tel</h3>
+                            <span class="p-contact__content-cardData">+81 80-5273-9438</span>
+                            <a href="tel:+81-80-5374-9438" target="_blank" class="p-contact__content-button">
+                                Write me
+                                <i class="ri-arrow-right-line p-contact__content-buttonIcon"></i>
+                            </a>
+                        </div>
+                        <div class="p-contact__content-card">
+                            <i class="ri-messenger-line p-contact__content-cardIcon"></i>
+                            <h3 class="p-contact__content-cardTitle">Message</h3>
+                            <span class="p-contact__content-cardData">user.fb123</span>
+                            <a href="#" target="_blank" class="p-contact__content-button">
+                                Write me
+                                <i class="ri-arrow-right-line p-contact__content-buttonIcon"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="p-contact__content">
+                    <h3 class="p-contact__content-title">お仕事依頼</h3>
+                    <form action="" class="p-contact__form">
+                        <div class="p-contact__form-group js-form-group">
+                            <label for="" class="p-contact__form-tag">お名前</label>
+                            <input type="text" placeholder="" class="p-contact__form-input">
+                            <!-- <span class="p-contact__form-error">エラーメッセージ</span> -->
+                        </div>
+                        <div class="p-contact__form-group  js-form-group">
+                            <label for="" class="p-contact__form-tag">メールアドレス</label>
+                            <input type="email" placeholder="" class="p-contact__form-input">
+                            <!-- <span class="p-contact__form-error">エラーメッセージ</span> -->
+                        </div>
+                        <div class="p-contact__form-group p-contact__form-area js-form-group">
+                            <label for="" class="p-contact__form-tag">内容</label>
+                            <textarea name="" id="" cols="30" rows="10" placeholder="" class="p-contact__form-input"></textarea>
+                            <!-- <span class="p-contact__form-error">エラーメッセージ</span> -->
+                        </div>
+                        <button class="p-contact__form-area-button c-button">送信</button>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
+    <!--=============== FOOTER ===============-->
+    <footer class="p-footer c-container">
+        <span class="p-footer__copy"> &#169; Sho Hiwada. All rigths reserved </span>
+    </footer>
+    <!--=============== SCROLLREVEAL ===============-->
+    <script src="assets/javascripts/scrollreveal.min.js"></script>
+    <!--=============== PARTICLES SNOW ===============-->
+    <script src="assets/javascripts/particles.min.js"></script>
+    <!--=============== MAIN JS ===============-->
+    <script src="assets/javascripts/main.js"></script>
+</body>
+
+</html>

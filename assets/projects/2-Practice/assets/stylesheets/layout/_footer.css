@@ -1,0 +1,11 @@
+.l-footer {
+  border-top: 1px solid #666666;
+  max-width: 1450px;
+  margin: 0 auto;
+}
+
+@media screen and (max-width: 375px) { /* sp用スタイル */
+  .l-footer {
+    padding: 0px 20px;
+  }
+}

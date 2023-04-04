@@ -1,0 +1,210 @@
+.p-header {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  background-color: #FFFFFF;
+  align-items: center;
+  padding: 15px 90px;
+  margin: 0 auto;
+  z-index: 9999;
+  /* position: fixed; */
+}
+
+.p-header__title {
+  display: flex;
+  align-items: center;
+}
+
+.p-header__titleText {
+  color: #ECAE31;
+  font-size: 22px;
+  font-weight: normal;
+  margin-left: 20px;
+}
+
+.p-header__menuList {
+  display: flex;
+  justify-content: space-around;
+}
+
+.p-header__menuItem {
+  font-weight: bold;
+  padding: 5px 30px;
+}
+
+.p-header__menuItem--subColor {
+  color: #FFFFFF;
+  background-color: #AD7F01;
+  border-radius: 20px;
+}
+
+.p-header__menuText:hover {
+  opacity: 0.6;
+}
+
+@media screen and (max-width: 1125px) {
+  .p-header {
+    padding: 0 50px;
+  }
+
+  .p-header__logo {
+    margin-left: 15px;
+  }
+
+  .p-header__logoImg {
+    height: 35px;
+  }
+
+  .p-header__titleText {
+    font-size: 18px;
+    margin-left: 10px;
+  }
+
+  .p-header__hamburgerBtn {
+      display: none;
+  }
+
+  .p-header__hamburgerIcon {
+    display: inline-block;
+    position: relative;
+    left: -5px;
+    padding: 25px 10px;
+    z-index: 9999;
+  }
+
+  .p-header__hamburgerBar {
+    display: flex;
+    justify-content: flex-end;
+    height: 1px;
+    width: 30px;
+    background: #666666;
+    position: relative;
+    transition: 0.3192s cubic-bezier(0.04, 0.04, 0.12, 0.96) 0.1008s;
+  }
+
+  .p-header__hamburgerBar:before, .p-header__hamburgerBar:after {
+    content: "";
+    display: block;
+    height: 100%;
+    position: absolute;
+    background: #666666;
+    transition: 0.3192s cubic-bezier(0.04, 0.04, 0.12, 0.96) 0.1008s;
+  }
+
+  .p-header__hamburgerBar:before {
+    width: 35px;
+    top: 10px;
+  }
+
+  .p-header__hamburgerBar:before, .p-header__hamburgerBar:after {
+    content: "";
+    display: block;
+    height: 100%;
+    position: absolute;
+    background: #666666;
+    transition: 0.3192s cubic-bezier(0.04, 0.04, 0.12, 0.96) 0.1008s;
+  }
+
+  .p-header__hamburgerBar:after {
+    width: 45px;
+    top: -10px;
+  }
+
+  .p-header__hamburgerMenu {
+    position: absolute;
+    width: calc(100% + 80px);
+    top: 100%;
+    left: -40px;
+    z-index: 9998;
+    text-align: center;
+    clear: both;
+    overflow: auto;
+    transition: 0.3192s cubic-bezier(0.04, 0.04, 0.12, 0.96) 0.1008s;
+    transform: scale(1, 0);
+    transform-origin: top;
+  }
+
+  .p-header__hamburgerBtn:checked~.p-header__hamburgerMenu {
+    /* background-color: #FFFFFF; */
+    transform: scale(1, 1);
+    transform-origin: top;
+    transition: 0.3192s cubic-bezier(0.04, 0.04, 0.12, 0.96) 0.1008s;
+  }
+
+  .p-header__hamburgerBtn:checked~.p-header__hamburgerIcon .p-header__hamburgerBar {
+    background: rgba(0, 0, 0, 0);
+    transition: 0.2192s cubic-bezier(0.04, 0.04, 0.12, 0.96) 0.1008s;
+  }
+
+  .p-header__hamburgerBtn:checked~ .p-header__hamburgerIcon .p-header__hamburgerBar:before {
+    width: 40px;
+    background: #FFFFFF;
+    transform: rotate(-45deg);
+    top: 0;
+  }
+
+  .p-header__hamburgerBtn:checked~ .p-header__hamburgerIcon .p-header__hamburgerBar:after {
+    width: 40px;
+    background: #FFFFFF;
+    transform: rotate(45deg);
+    top: 0;
+  }
+
+  .p-header__hamburgerItem {
+    width: 80%;
+    border-bottom: solid 1px #FFFFFF;
+    padding: 15px;
+    margin: 0 auto;
+  }
+
+  .p-header__hamburgerText {
+    color: #FFFFFF;
+    font-size: 18px;
+    font-weight: bold;
+    letter-spacing: 1.2px;
+  }
+
+  .p-header__hamburgerText:hover {
+    opacity: 0.6;
+  }
+
+  .p-header__hamburgerBtn:checked~ .p-header__hamburgerClose {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+  }
+
+  .p-header__hamburgerBtn:checked~ .p-header__hamburgerClose .p-header__hamburgerCover {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    z-index: 9997;
+    background: rgba(3,3,3,.5);
+    display: block;
+  }
+}
+
+
+@media screen and (max-width: 795px) {
+  .p-header {
+    padding: 0px 30px;
+  }
+
+  .p-header__logo {
+    margin-right: 10px;
+  }
+
+  .p-header__titleText {
+    margin-left: 0;
+  }
+}
+
+@media screen and (max-width: 375px) {
+  .p-header {
+    padding: 0px 5px;
+  }
+}

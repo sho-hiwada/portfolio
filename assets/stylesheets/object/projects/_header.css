@@ -1,0 +1,186 @@
+/*=============== HEADER ===============*/
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: transparent;
+  z-index: var(--z-fixed);
+  /* background-color: #FFFFFF; */
+  transition: .4s;
+}
+.p-header__nav {
+  height: var(--header-height);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+@media screen and (max-width: 991px) {
+  .p-header__nav-menu {
+    position: fixed;
+      bottom: 2rem;
+      background-color: var(--container-color);
+      box-shadow: 0 8px 24px hsl(228deg 66% 45% / 15%);
+      width: 90%;
+      left: 0;
+      right: 0;
+      margin: 0 auto;
+      padding: .8rem 3rem;
+      border-radius: 1.25rem;
+      transition: .4s;
+  }
+  .p-header__nav-list {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .p-header__nav-link {
+    color: var(--text-color);
+    display: flex;
+    padding: .5rem;
+    border-radius: 50%;
+  }
+  
+  .p-header__nav-link i {
+    font-size: 1.25rem;
+  }
+  
+  .p-header__nav-link span {
+    display: none;
+  }
+  .is-active-link {
+    background: linear-gradient(101deg,
+                hsl(228, 66%, 53%),
+                hsl(228, 66%, 47%));
+    color: #FFFFFF;
+    box-shadow:0 4px 8px hsla(228, 66%, 45%, .25);
+  }
+}
+
+/* Active link */
+
+
+/* Change background header */
+.scroll-header {
+  background-color: var(--body-color);
+  box-shadow: 0 1px 4px hsla(228, 4%, 15%, .1);
+}
+
+/*=============== THEME ===============*/
+.p-header__theme-group {
+    cursor: pointer;
+    transition: .3s;
+}
+.p-header__theme-change {
+  font-size: 1.25rem;
+  color: var(--title-color);
+  cursor: pointer;
+  transition: .3s;
+}
+
+.p-header__theme-change:hover {
+  color: var(--first-color);
+}
+
+
+/*========== Variables Dark theme ==========*/
+body.c-dark-theme {
+  --title-color: hsl(var(--hue), 12%, 95%);
+  --text-color: hsl(var(--hue), 12%, 75%);
+  --body-color: hsl(var(--hue), 40%, 8%);
+  --container-color:hsl(var(--hue), 24%, 12%) ;
+}
+
+
+/*========== 
+    Color changes in some parts of 
+    the website, in light theme
+==========*/
+.c-dark-theme .c-button__gary {
+  background-color: hsl(var(--hue), 24%, 16%);
+}
+
+.c-dark-theme .p-filters__content,
+.c-dark-theme .p-contact__content-card {
+  background-color: var(--container-color);
+}
+.c-dark-theme .p-profile::after {
+  background-color: rgba(0,0,0,0.68);
+}
+
+.c-dark-theme::-webkit-scrollbar {
+  background-color: hsl(var(--hue), 8%, 16%);
+}
+
+.c-dark-theme::-webkit-scrollbar-thumb {
+  background-color: hsl(var(--hue), 8%, 24%);
+}
+
+.c-dark-theme::-webkit-scrollbar-thumb:hover {
+  background-color: hsl(var(--hue), 8%, 32%);
+}
+
+.c-dark-theme .c-button-theme label {
+  background-color: #3e3e3e;
+}
+
+/*=============== BREAKPOINTS ===============*/
+/* For small devices */
+@media screen and (max-width: 320px) {
+  .p-header__nav-menu {
+    padding: .8rem 1.5rem;
+  }
+}
+
+/* For medium devices */
+@media screen and (min-width: 576px) {
+  .p-header__nav {
+    height: calc(var(--header-height) + 1rem);
+
+  }
+  .p-header__theme-group {
+    position: absolute;
+    right: 2.5rem;
+  }
+  .p-header__nav-menu {
+    width: 328px;
+  }
+
+}
+
+/* For large devices */
+@media screen and (min-width: 992px) {
+  .p-header__nav {
+    column-gap: 3rem;
+}
+.p-header__theme-group {
+  position: initial;
+}
+  .p-header__nav-menu {
+    width: initial;
+    margin-left: auto;
+  }
+  .p-header__nav-list {
+    display: flex;
+    column-gap: 3rem;
+  }
+  .p-header__nav-link {
+    color: var(--title-color);
+  }
+  .p-header__nav-link i {
+    display: none;
+  }
+  .p-header__nav-button {
+    display: inline-block;
+  }
+
+  .scroll-header .p-header__nav__link,
+  .scroll-header .p-header__change-theme {
+    color: var(--text-color);
+  }
+  .scroll-header .is-active-link {
+    color: var(--first-color);
+  }
+}

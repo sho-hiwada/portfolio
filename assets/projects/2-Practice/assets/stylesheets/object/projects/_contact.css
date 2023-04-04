@@ -1,0 +1,206 @@
+.p-contact__head {
+  justify-content: center;
+}
+
+.p-contact__inner {
+  padding: 80px;
+}
+
+.p-contact__body {
+  text-align: center;
+  margin-bottom: 100px;
+}
+
+.p-contact__main {
+  max-width: 600px;
+  text-align: left;
+  margin: 0 auto;
+}
+
+.p-contact__item:not(:first-child) {
+  margin-top: 30px;
+}
+
+.p-contact__item:last-child {
+  text-align: center;
+  margin-top: 50px;
+}
+
+.p-contact__label {
+  display: block;
+  font-size: 20px;
+  margin-bottom: 15px;
+}
+
+.p-contact__select {
+  position: relative;
+  width: 60%;
+  font-size: 22px;
+  border: 1px solid;
+  border-radius: 0px;
+  cursor: pointer;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+}
+
+.p-contact__error {
+  margin-top: 10px;
+}
+
+.p-contact__select::before {
+  content: '';
+  position: absolute;
+  top: 50%;
+  right: 20px;
+  width: 0;
+  height: 0;
+  padding: 0;
+  border-left: 12px solid transparent;
+  border-right: 12px solid transparent;
+  border-top: 12px solid #cccccc;
+  pointer-events: none;
+  transform: translateY(-50%);
+}
+
+.p-contact__selectItem {
+  width: 100%;
+  border-radius: 0px;
+  padding: 15px;
+  border: none;
+  cursor: pointer;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+}
+
+.p-contact__required {
+  display: inline-block;
+  font-size: 15px;
+  color: #FFFFFF;
+  background-color: #CC0000;
+  padding: 3px 20px;
+  margin-left: 10px;
+}
+
+.p-contact__input {
+  display: block;
+  width: 90%;
+  font-size: 20px;
+  padding: 10px;
+  border: 1px solid;
+}
+
+.p-contact__input:invalid:focus {
+  border: solid 1px #E66A54;
+  outline: none;
+}
+
+.p-contact__error {
+  display: none;
+  color: #E66A54;
+  font-size: 17px;
+}
+
+.p-contact__input:invalid:focus + .p-contact__error {
+  display: block;
+}
+
+.p-contact__textArea {
+  width: 100%;
+  height: 80px;
+  border: 1px solid #000000;
+}
+
+.p-contact__button {
+  font-size: 22px;
+  color: #FFFFFF;
+  background-color: #DB320B;
+  text-align: center;
+  border: none;
+  padding: 25px 0;
+  width: 60%;
+  cursor: pointer;
+}
+
+.p-contact__button:hover {
+  opacity: 0.6;
+}
+
+@media screen and (max-width: 795px) {
+  .p-contact__inner {
+    padding: 80px 30px;
+  }
+
+  .p-contact__item {
+    width: 100%;
+    margin-top: 4%;
+    margin-bottom: 4%;
+  }
+
+  .p-contact__label {
+    margin-bottom: 10px;
+  }
+
+  .p-contact__select {
+    font-size: 10px;
+  }
+
+  .p-contact__select::before {
+    border-left: 7px solid transparent;
+    border-right: 7px solid transparent;
+    border-top: 7px solid #cccccc;
+  }
+
+  .p-contact__selectItem {
+    font-size: 20px;
+    padding: 3%;
+  }
+
+  .p-contact__button {
+    width: 100%;
+    font-size: 30px;
+    padding: 2% 0;
+  }
+}
+
+@media screen and (max-width: 375px) {
+  .p-contact__inner {
+    padding: 80px 30px;
+  }
+
+  .p-contact__label {
+    font-size: 10px;
+  }
+
+  .p-contact__selectItem {
+    font-size: 12px;
+  }
+
+  .p-contact__input {
+    height: 5%;
+    padding: 1%;
+  }
+
+  .p-contact__required {
+    font-size: 10px;
+    padding: 3px 10px;
+  }
+
+  .p-contact__error{
+    font-size: 10px;
+  }
+
+  .p-contact__textArea {
+    height: 50px;
+  }
+
+  .p-contact__button {
+    font-size: 14px;
+    padding: 4% 0;
+  }
+  
+  .p-contact__item:last-child {
+    margin-top: 30px;
+  }
+}

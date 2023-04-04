@@ -1,0 +1,561 @@
+<!DOCTYPE html>
+    <html lang="ja">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <!--=============== FAVICON ===============-->
+        <link rel="shortcut icon" href="assets/images/favicon.png" type="image/x-icon">
+
+        <!--=============== REMIX ICONS ===============-->
+        <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
+
+        <!--=============== SWIPER CSS ===============-->
+        <link rel="stylesheet" href="assets/css/swiper-bundle.min.css">
+
+        <!--=============== CSS ===============-->
+        <link rel="stylesheet" href="assets/css/style.css">
+
+        <title>car website</title>
+    </head>
+    <body>
+        <!--==================== HEADER ====================-->
+        <header class="header" id="header">
+            <nav class="nav container">
+                <a href="#" class="nav__logo">
+                    <i class="ri-steering-line">
+                        Car
+                    </i>
+                </a>
+
+                <div class="nav__menu" id="nav-menu">
+                    <ul class="nav__list">
+                        <li class="nav__item">
+                            <a href="#home" class="nav__link active-link">Home</a>
+                        </li>
+                        <li class="nav__item">
+                            <a href="#about" class="nav__link">About</a>
+                        </li>
+                        <li class="nav__item">
+                            <a href="#popular" class="nav__link">Popular</a>
+                        </li>
+                        <li class="nav__item">
+                            <a href="#featured" class="nav__link">Featured</a>
+                        </li>
+                    </ul>
+
+                    <div class="nav__close" id="nav-close">
+                        <i class="ri-close-line"></i>
+                    </div>
+                </div>
+
+                <!-- Toggle button -->
+                <div class="nav__toggle" id="nav-toggle">
+                    <i class="ri-menu-line"></i>
+                </div>
+            </nav>
+        </header>
+
+        <!--==================== MAIN ====================-->
+        <main class="main">
+            <!--==================== HOME ====================-->
+            <section class="home section" id="home">
+                <div class="shape shape__big"></div>
+                <div class="shape shape__small"></div>
+                <div class="home__container container grid">
+                    <div class="home__data">
+                        <h1 class="home_title">最高の車を選ぶ</h1>
+                        <h2 class="home__subtitle">ポルシェ ミッション E</h2>
+                        <h3 class="home__elec">
+                            <i class="ri-flashlight-fill"></i>電気自動車
+                        </h3>
+                    </div>
+
+                    <img src="assets/images/home.png" alt="" class="home__img">
+
+                    <div class="home__car">
+                        
+                        <div class="home__car-data">
+                            <div class="home__car-icon">
+                                <i class="ri-temp-cold-line"></i>
+                            </div>
+                            <h2 class="home__car-number">24°</h2>
+                            <h3 class="home__car-name">温度</h3>
+                        </div>
+
+                        <div class="home__car-data">
+                            <div class="home__car-icon">
+                                <i class="ri-dashboard-3-line"></i>
+                            </div>
+                            <h2 class="home__car-number">873</h2>
+                            <h3 class="home__car-name">マイレージ</h3>
+                        </div>
+
+                        <div class="home__car-data">
+                            <div class="home__car-icon">
+                                <i class="ri-flashlight-fill"></i>
+                            </div>
+                            <h2 class="home__car-number">94%</h2>
+                            <h3 class="home__car-name">バッテリー</h3>
+                        </div>
+
+                    </div>
+
+                    <a href="#about" class="home__button">START</a>
+                </div>
+            </section>
+
+            <!--==================== ABOUT ====================-->
+            <section class="about section" id="about">
+                <div class="about__container container grid">
+                    <div class="about__group">
+                        <img src="assets/images/about.png" alt="" class="about__img">
+                        <div class="about__card">
+                            <h3 class="about__card-title">2,500+</h3>
+                            <p class="about__card-description">スーパーチャージで<br>人気の公道を走る</p>
+                        </div>
+                    </div>
+
+                    <div class="about__data">
+                        <h2 class="section__title about__title">
+                            未来技術を搭載したマシン
+                        </h2>
+                        <p class="about__description">
+                            未来的な構造とデザイン、そして長く使える革新的なプラットフォーム。
+                            有名ブランドが手がける高性能電気自動車で、未来を走る。
+                            長く使える革新的なプラットフォームが特徴。
+                        </p>
+                        <a href="#" class="button">詳細を知る</a>
+                    </div>
+                </div>
+            </section>
+
+            <!--==================== POPULAR ====================-->
+            <section class="popular section" id="popular">
+                <h2 class="section__title">
+                    電気自動車を選ぶなら<br> ポルシェブランド
+                </h2>
+
+                <div class="popular__container container swiper">
+                    <div class="swiper-wrapper">
+
+                        <article class="popular__card swiper-slide">
+                            <div class="shape shape__smaller"></div>
+
+                            <h1 class="popular__title">ポルシェ</h1>
+                            <h3 class="popular__subtitle">ターボ S</h3>
+
+                            <img src="assets/images/popular1.png" alt="" class="popular__img">
+
+                            <div class="popular__data">
+                                <div class="popular__data-group">
+                                    <i class="ri-dashboard-3-line"></i>3.7 Sec
+                                </div>
+                                <div class="popular__data-group">
+                                    <i class="ri-funds-box-line"></i>356 Km/h
+                                </div>
+                                <div class="popular__data-group">
+                                    <i class="ri-charging-pile-2-line"></i>電動
+                                </div>
+                            </div>
+
+                            <h3 class="popular__price">¥23,074,562</h3>
+
+                            <button class="button popular__button">
+                                <i class="ri-shopping-bag-2-line"></i>
+                            </button>
+                        </article>
+
+                        <article class="popular__card swiper-slide">
+                            <div class="shape shape__smaller"></div>
+
+                            <h1 class="popular__title">ポルシェ</h1>
+                            <h3 class="popular__subtitle">タイカン</h3>
+
+                            <img src="assets/images/popular2.png" alt="" class="popular__img">
+
+                            <div class="popular__data">
+                                <div class="popular__data-group">
+                                    <i class="ri-dashboard-3-line"></i>3.7 Sec
+                                </div>
+                                <div class="popular__data-group">
+                                    <i class="ri-funds-box-line"></i>356 Km/h
+                                </div>
+                                <div class="popular__data-group">
+                                    <i class="ri-charging-pile-2-line"></i>電動
+                                </div>
+                            </div>
+
+                            <h3 class="popular__price">¥15,072,582</h3>
+
+                            <button class="button popular__button">
+                                <i class="ri-shopping-bag-2-line"></i>
+                            </button>
+                        </article>
+
+                        <article class="popular__card swiper-slide">
+                            <div class="shape shape__smaller"></div>
+
+                            <h1 class="popular__title">ポルシェ</h1>
+                            <h3 class="popular__subtitle">ターボ Sクラス</h3>
+
+                            <img src="assets/images/popular3.png" alt="" class="popular__img">
+
+                            <div class="popular__data">
+                                <div class="popular__data-group">
+                                    <i class="ri-dashboard-3-line"></i>3.7 Sec
+                                </div>
+                                <div class="popular__data-group">
+                                    <i class="ri-funds-box-line"></i>356 Km/h
+                                </div>
+                                <div class="popular__data-group">
+                                    <i class="ri-charging-pile-2-line"></i>電動
+                                </div>
+                            </div>
+
+                            <h3 class="popular__price">¥19,795,062</h3>
+
+                            <button class="button popular__button">
+                                <i class="ri-shopping-bag-2-line"></i>
+                            </button>
+                        </article>
+
+                        <article class="popular__card swiper-slide">
+                            <div class="shape shape__smaller"></div>
+
+                            <h1 class="popular__title">ポルシェ</h1>
+                            <h3 class="popular__subtitle">718 ボクスター</h3>
+
+                            <img src="assets/images/popular4.png" alt="" class="popular__img">
+
+                            <div class="popular__data">
+                                <div class="popular__data-group">
+                                    <i class="ri-dashboard-3-line"></i>3.7 Sec
+                                </div>
+                                <div class="popular__data-group">
+                                    <i class="ri-funds-box-line"></i>356 Km/h
+                                </div>
+                                <div class="popular__data-group">
+                                    <i class="ri-charging-pile-2-line"></i>電動
+                                </div>
+                            </div>
+
+                            <h3 class="popular__price">¥16,515,562</h3>
+
+                            <button class="button popular__button">
+                                <i class="ri-shopping-bag-2-line"></i>
+                            </button>
+                        </article>
+
+                        <article class="popular__card swiper-slide">
+                            <div class="shape shape__smaller"></div>
+
+                            <h1 class="popular__title">ポルシェ</h1>
+                            <h3 class="popular__subtitle">ケイマン</h3>
+
+                            <img src="assets/images/popular5.png" alt="" class="popular__img">
+
+                            <div class="popular__data">
+                                <div class="popular__data-group">
+                                    <i class="ri-dashboard-3-line"></i>3.7 Sec
+                                </div>
+                                <div class="popular__data-group">
+                                    <i class="ri-funds-box-line"></i>356 Km/h
+                                </div>
+                                <div class="popular__data-group">
+                                    <i class="ri-charging-pile-2-line"></i>電動
+                                </div>
+                            </div>
+
+                            <h3 class="popular__price">¥16,909,102</h3>
+
+                            <button class="button popular__button">
+                                <i class="ri-shopping-bag-2-line"></i>
+                            </button>
+                        </article>
+                    </div>
+
+                    <div class="swiper-pagination"></div>
+                </div>
+            </section>
+
+            <!--==================== FEATURES ====================-->
+            <section class="features section">
+                <h2 class="section__title">
+                    その他の機能
+                </h2>
+
+                <div class="features__container container grid">
+                    <div class="features__group">
+                        <img src="assets/images/features.png" alt="" class="features__img">
+
+                        <div class="features__card features__card-1">
+                            <h3 class="features__card-title">800v</h3>
+                            <p class="features__card-description">ターボ<br>チャージン</p>
+                        </div>
+
+                        <div class="features__card features__card-2">
+                            <h3 class="features__card-title">350</h3>
+                            <p class="features__card-description">Km<br>距離</p>
+                        </div>
+
+                        <div class="features__card features__card-3">
+                            <h3 class="features__card-title">480</h3>
+                            <p class="features__card-description">Km<br>走行</p>
+                        </div>
+
+                    </div>
+                </div>
+                <img src="assets/images/map.svg" alt="" class="features__map">
+            </section>
+
+            <!--==================== FEATURED ====================-->
+            <section class="featured section" id="featured">
+                <h2 class="section__title">
+                    高級車特集
+                </h2>
+
+                <div class="featured__container container">
+                    <ul class="featured__filters">
+                        <li>
+                            <button class="featured__item active-featured" data-filter="all">
+                                <span>All</span>
+                            </button>
+                        </li>
+
+                        <li>
+                            <button class="featured__item" data-filter=".tesla">
+                                <img src="assets/images/logo3.png" alt="">
+                            </button>
+                        </li>
+
+                        <li>
+                            <button class="featured__item" data-filter=".audi">
+                                <img src="assets/images/logo2.png" alt="">
+                            </button>
+                        </li>
+
+                        <li>
+                            <button class="featured__item" data-filter=".porsche">
+                                <img src="assets/images/logo1.png" alt="">
+                            </button>
+                        </li>
+                    </ul>
+
+                    <div class="featured__content grid">
+
+                        <article class="featured__card mix tesla">
+                            <div class="shape shape__smaller"></div>
+                            <h1 class="featured__title">テスラ</h1>
+                            <h3 class="featured__subtitle">モーダル X</h3>
+                            <img src="assets/images/featured1.png" alt="" class="featured__img">
+                            <h3 class="featured__price">¥12,973,702</h3>
+                            <button class="button featured__button">
+                                <i class="ri-shopping-bag-2-line"></i>
+                            </button>
+                        </article>
+
+                        <article class="featured__card mix tesla">
+                            <div class="shape shape__smaller"></div>
+                            <h1 class="featured__title">テスラ</h1>
+                            <h3 class="featured__subtitle">モーダル 3</h3>
+                            <img src="assets/images/featured2.png" alt="" class="featured__img">
+                            <h3 class="featured__price">¥6,021,162</h3>
+                            <button class="button featured__button">
+                                <i class="ri-shopping-bag-2-line"></i>
+                            </button>
+                        </article>
+
+                        <article class="featured__card mix audi">
+                            <div class="shape shape__smaller"></div>
+                            <h1 class="featured__title">アウディ</h1>
+                            <h3 class="featured__subtitle">E-tron</h3>
+                            <img src="assets/images/featured3.png" alt="" class="featured__img">
+                            <h3 class="featured__price">¥23,074,562</h3>
+                            <button class="button featured__button">
+                                <i class="ri-shopping-bag-2-line"></i>
+                            </button>
+                        </article>
+
+                        <article class="featured__card mix porsche">
+                            <div class="shape shape__smaller"></div>
+                            <h1 class="featured__title">ポルシェ</h1>
+                            <h3 class="featured__subtitle">ボクスター 987</h3>
+                            <img src="assets/images/featured4.png" alt="" class="featured__img">
+                            <h3 class="featured__price">¥16,646,742</h3>
+                            <button class="button featured__button">
+                                <i class="ri-shopping-bag-2-line"></i>
+                            </button>
+                        </article>
+
+                        <article class="featured__card mix porsche">
+                            <div class="shape shape__smaller"></div>
+                            <h1 class="featured__title">ポルシェ</h1>
+                            <h3 class="featured__subtitle">パナメーラ</h3>
+                            <img src="assets/images/featured5.png" alt="" class="featured__img">
+                            <h3 class="featured__price">¥16,646,742</h3>
+                            <button class="button featured__button">
+                                <i class="ri-shopping-bag-2-line"></i>
+                            </button>
+                        </article>
+
+                    </div>
+                </div>
+            </section>
+
+            <!--==================== OFFER ====================-->
+            <section class="offer section">
+                <div class="offer__container container grid">
+                    <img src="assets/images/offer-bg.png" alt="" class="offer__bg">
+
+                    <div class="offer__data">
+                        <h2 class="section__title offer__title">
+                            メールアドレスのご登録で<br>新着情報をお受け取りいただけます
+                        </h2>
+
+                        <p class="offer__description">
+                            ご登録いただくと、新車・中古車に関する情報、 製品情報や新車情報、特別なイベントご招待などの会員限定コンテンツをメールでご案内いたします。
+                        </p>
+
+                        <a href="#" class="button">登録</a>
+                    </div>
+
+                    <img src="assets/images/offer.png" alt="" class="offer__img">
+                </div>
+            </section>
+
+            <!--==================== LOGOS ====================-->
+            <section class="logos section">
+                <div class="logos__container container grid">
+                    <div class="logos__content">
+                        <img src="assets/images/logo1.png" alt="" class="logos__img">
+                    </div>
+                    <div class="logos__content">
+                        <img src="assets/images/logo2.png" alt="" class="logos__img">
+                    </div>
+                    <div class="logos__content">
+                        <img src="assets/images/logo3.png" alt="" class="logos__img">
+                    </div>
+                    <div class="logos__content">
+                        <img src="assets/images/logo4.png" alt="" class="logos__img">
+                    </div>
+                    <div class="logos__content">
+                        <img src="assets/images/logo5.png" alt="" class="logos__img">
+                    </div>
+                    <div class="logos__content">
+                        <img src="assets/images/logo6.png" alt="" class="logos__img">
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        <!--==================== FOOTER ====================-->
+        <footer class="footer section">
+            <div class="shape shape__big"></div>
+            <div class="shape shape__small"></div>
+
+            <div class="footer__container container grid">
+                <div class="footer__content">
+                    <a href="#" class="footer__logo">
+                        <i class="ri-steering-line"></i>Car
+                    </a>
+
+                    <p class="footer__description">
+                        私たちは最高の車を提供して、<br>
+                        最高の人生をサポートします。
+                    </p>
+                </div>
+
+                <div class="footer__content">
+                    <h3 class="footer__title">
+                        Company
+                    </h3>
+
+                    <ul class="footer__links">
+                        <li>
+                            <a href="#" class="footer__link">About</a>
+                        </li>
+                        <li>
+                            <a href="#" class="footer__link">Cars</a>
+                        </li>
+                        <li>
+                            <a href="#" class="footer__link">History</a>
+                        </li>
+                        <li>
+                            <a href="#" class="footer__link">Shop</a>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="footer__content">
+                    <h3 class="footer__title">
+                        Information
+                    </h3>
+
+                    <ul class="footer__links">
+                        <li>
+                            <a href="#" class="footer__link">見積もり依頼</a>
+                        </li>
+                        <li>
+                            <a href="#" class="footer__link">ディーラー</a>
+                        </li>
+                        <li>
+                            <a href="#" class="footer__link">お問い合わせ</a>
+                        </li>
+                        <li>
+                            <a href="#" class="footer__link">サービス</a>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="footer__content">
+                    <h3 class="footer__title">
+                        Follow us
+                    </h3>
+
+                    <ul class="footer__social">
+                        <li>
+                            <a href="https://www.facebook.com/" target="_blank" class="footer__social-link">
+                                <i class="ri-facebook-fill"></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://www.instagram.com/" target="_blank" class="footer__social-link">
+                                <i class="ri-instagram-line"></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://twitter.com/" target="_blank" class="footer__social-link">
+                                <i class="ri-twitter-line"></i>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+
+            </div>
+
+            <span class="footer__copy">
+                &#169; All rigths reserved
+            </span>
+        </footer>
+
+
+        <!--========== SCROLL UP ==========-->
+        <a href="#" class="scrollup" id="scroll-up">
+            <i class="ri-arrow-up-line"></i>
+        </a>
+
+
+        <!--=============== SCROLL REVEAL ===============-->
+        <script src="assets/js/scrollreveal.min.js"></script>
+
+        <!--=============== SWIPER JS ===============-->
+        <script src="assets/js/swiper-bundle.min.js"></script>
+
+        <!--=============== MIXITUP JS ===============-->
+        <script src="assets/js/mixitup.min.js"></script>
+
+        <!--=============== MAIN JS ===============-->
+        <script src="assets/js/main.js"></script>
+    </body>
+</html>

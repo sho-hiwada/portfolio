@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+    <html lang="ja">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <!--=============== FAVICON ===============-->
+        <link rel="shortcut icon" href="assets/img/favicon.png" type="image/x-icon">
+        <!--=============== BOXICONS ===============-->
+        <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+        <!--=============== CSS ===============-->
+        <link rel="stylesheet" href="assets/css/styles.css">
+
+        <title>coffee shop website</title>
+    </head>
+    <body>
+        <!--==================== LOADER ====================-->
+        <div class="load" id="load">
+          <img src="assets/img/loadcoffee.gif" alt="" class="load__img">
+        </div>
+
+        <!--==================== HEADER ====================-->
+        <header class="header" id="header">
+            <nav class="nav container">
+              <a href="#" class="nav__logo">
+                <img src="assets/img/logo.png" alt="" class="nav__logo-img">
+                Coffee.
+              </a>
+
+              <div class="nav__menu" id="nav-menu">
+                <ul class="nav__list">
+                  <li class="nav__item">
+                    <a href="#home" class="nav__link">Home</a>
+                  </li>
+                  <li class="nav__item">
+                    <a href="#about" class="nav__link">About</a>
+                  </li>
+                  <li class="nav__item">
+                    <a href="#products" class="nav__link">Products</a>
+                  </li>
+                  <li class="nav__item">
+                    <a href="#premium" class="nav__link">Premium</a>
+                  </li>
+                  <li class="nav__item">
+                    <a href="#blog" class="nav__link">Blog</a>
+                  </li>
+                </ul>
+
+                <div class="nav__close" id="nav-close">
+                  <i class='bx bx-x'></i>
+                </div>
+              </div>
+
+              <!-- Toggle Button -->
+              <div class="nav__toggle" id="nav-toggle">
+                <i class='bx bx-grid-alt'></i>
+              </div>
+            </nav>
+        </header>
+
+        <!--==================== MAIN ====================-->
+        <main>
+            <!--==================== INFORMATION ====================-->
+            <section  class="info section container" id="info">
+                    <h2 class="section__title">
+                      インフォメーション
+                    </h2>
+                    <div class="map__container">
+                      <iframe class="map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3323.5844980739485!2d130.4164216151523!3d33.59013584938758!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x354191c781c73035%3A0xf0cd8ada928d5e6a!2z44CSODEyLTAwMTEg56aP5bKh55yM56aP5bKh5biC5Y2a5aSa5Yy65Y2a5aSa6aeF5Lit5aSu6KGX77yS5LiB55uu77yR4oiS77yR!5e0!3m2!1sja!2sjp!4v1678619844126!5m2!1sja!2sjp" width="800" height="600" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    </div>
+            </section>
+
+            <!--==================== INFORMATION TEXT ====================-->
+            <section class="info_description info_section" id="info">
+                <div class="products__container container">
+                  <p>
+                    〒812-0012<br>
+                    福岡県福岡市博多区博多駅中央街１−１<br>
+                    CoffeeShop<br>
+                    TEL: +81 90-1234-1234<br>
+                    Email: coffee@email.com<br>
+                    営業時間: 月曜日～土曜日 午前8時～午後10時
+                  </p>
+                </div>
+            </section>
+
+        </main>
+        <!--==================== FOOTER ====================-->
+        <footer class="footer">
+          <div class="footer__container container">
+            <h1 class="footer__title">Coffee.</h1>
+
+            <div class="footer__content grid">
+              <div class="footer__data">
+                <p class="footer__description">
+                  メールマガジンを購読する
+                </p>
+                <div class="footer__newsletter">
+                  <input type="email" placeholder="メールアドレス" class="footer__input">
+                  <button class="footer__button">
+                    <i class='bx bx-right-arrow-alt'></i>
+                  </button>
+                </div>
+              </div>
+
+              <div class="footer__data">
+                <h2 class="footer__subtitle">住所</h2>
+                <p class="footer__information">
+                  〒812-0012<br> 福岡県福岡市博多区博多駅中央街１−１
+                  <img src="assets/img/footerflag.png" alt="" class="footer__flag">
+                </p>
+              </div>
+
+              <div class="footer__data">
+                <h2 class="footer__subtitle">お問い合わせ</h2>
+                <p class="footer__information">
+                  +81 90-1234-1234 <br>
+                  coffee@email.com
+                </p>
+              </div>
+
+              <div class="footer__data">
+                <h2 class="footer__subtitle">営業時間</h2>
+                <p class="footer__information">
+                  月曜日～土曜日 <br>
+                  午前8時～午後10時
+                </p>
+              </div>
+
+            </div>
+
+            <div class="footer__group">
+              <ul class="footer__social">
+                  <a href="https://www.facebook.com/" target="_blank" class="footer__social-link">
+                    <i class='bx bxl-facebook'></i>
+                  </a>
+                  <a href="https://www.instagram.com/" target="_blank" class="footer__social-link">
+                    <i class='bx bxl-instagram'></i>
+                  </a>
+                  <a href="https://twitter.com/" target="_blank" class="footer__social-link">
+                    <i class='bx bxl-twitter'></i>
+                  </a>
+              </ul>
+
+              <span class="footer__copy">
+                &#169; All rigths reserved
+              </span>
+            </div>
+          </div>
+        </footer>
+
+        <!--=============== MAIN JS ===============-->
+        <script src="assets/js/main.js"></script>
+    </body>
+</html>

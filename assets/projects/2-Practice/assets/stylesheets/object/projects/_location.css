@@ -1,0 +1,47 @@
+.p-location__head {
+  justify-content: center;
+}
+
+.p-location__inner {
+  text-align: center;
+  padding: 80px;
+}
+
+.p-location__titleWrap {
+  margin-bottom: 50px;
+}
+
+.p-location__body {
+  margin-top: 10px;
+}
+
+.p-location__text {
+  font-size: 20px;
+}
+
+.p-location__map {
+  width: 60%;
+  height: 400px;
+}
+
+@media screen and (max-width: 795px) { /* sp用スタイル */
+  .p-location__inner {
+    padding: 0;
+    margin-bottom: 30px;
+  }
+
+  .p-location__map {
+    width: 85%;
+  }
+}
+
+@media screen and (max-width: 375px) { /* sp用スタイル */
+  .p-location__titleWrap {
+    width: 75%;
+    margin: 0 auto 30px;
+  }
+  
+  .p-location__map {
+    height: 200px;
+  }
+}

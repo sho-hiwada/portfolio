@@ -1,0 +1,176 @@
+.p-service__inner {
+  padding: 80px 0;
+}
+
+.p-service__titleWrap {
+  padding: 0 85px;
+  margin-bottom: 40px;
+}
+
+.p-service__listBox {
+  margin-top: 40px;
+}
+
+.p-service__list {
+  display: flex;
+  justify-content: space-between;
+  overflow-x: scroll;
+}
+
+.p-service__item:not(:last-child) {
+  margin-right: 30px;
+}
+
+.p-service__main {
+  max-width: 1300px;
+  margin: 0 auto;
+  padding: 0 30px;
+}
+
+.p-service__cardList {
+  padding: 100px 0;
+}
+
+.p-service__card {
+  display: flex;
+  position: relative;
+  margin-top: 90px;
+}
+
+.p-service__card:nth-child(even) {
+  flex-direction: row-reverse;
+}
+
+.p-service__cardHead {
+  position: absolute;
+  width: 50%;
+  max-width: 640px;
+  top: -20px;
+  z-index: 100;
+}
+
+.p-service__cardBody {
+  display: flex;
+  width: 50%;
+  z-index: 10;
+  background-color: #F0F0F0;
+  margin-top: 50px;
+  padding: 5%;
+  aspect-ratio: 2 / 1;
+}
+
+.p-service__cardBody:before {
+  content:"";
+	display: block;
+	width:0;
+	height:0;
+  padding-top: 65%;
+}
+
+.p-service__cardLeft {
+  margin-right: auto;
+  margin-left: 30px;
+}
+
+.p-service__cardRight {
+  margin-left: auto;
+  margin-right: 30px;
+}
+
+.p-service__bodyTitle {
+  margin-top: 15px;
+}
+
+.p-service__cardTitle {
+  font-size: 22px;
+  font-weight: normal;
+  color: #B8860B;
+  margin-bottom: 20px;
+}
+
+.p-service__bodyText {
+  margin-top: 15px;
+}
+
+.p-service__list {
+  margin-top: 30px;
+}
+
+@media screen and (max-width: 1125px) {
+  .p-service__item:not(:last-child) {
+    margin-right: 15px;
+  }
+}
+
+@media screen and (max-width: 795px) {
+  .p-service__backGroundText {
+    font-size: 120px;
+  }
+
+  .p-service__bodyTitle {
+    margin-bottom: 15px;
+  }
+
+  .p-service__bodyText {
+    font-size: 12px;
+    margin-top: 0px;
+  }
+
+  .p-service__list {
+    overflow-x: scroll;
+  }
+
+  .p-service__item {
+    min-width: 250px;
+    margin-right: 10px;
+  }
+
+  .p-service__card {
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: start;
+    margin-bottom: 20px;
+  }
+
+  .p-service__cardHead {
+    width: 90%;
+  }
+
+  .p-service__cardBody {
+    width: 90%;
+    max-height: 550px;
+    padding-top: 55%;
+    margin-top: 4%;
+    margin-left: auto;
+    margin-right: 0;
+    aspect-ratio: 0;
+  }
+
+  .p-service__cardBody:before {
+    padding-top: 0;
+    padding-bottom: 20%;
+  }
+
+  .p-service__cardText {
+    font-size: 10px;
+  }
+}
+
+@media screen and (max-width: 375px) {
+  .p-service__titleWrap {
+    padding: 0 30px;
+  }
+
+  .p-service__cardHead {
+    width: 100%;
+  }
+
+  .p-service__cardBody {
+    width: 95%;
+  }
+  
+  .p-service__cardTitle {
+    font-size: 12px;
+    margin: 10px 0;
+  }
+}

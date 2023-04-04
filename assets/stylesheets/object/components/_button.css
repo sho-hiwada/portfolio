@@ -1,0 +1,171 @@
+.c-button {
+  display: inline-flex;
+  align-items: center;
+  column-gap: .5rem;
+  background-color: var(--first-color);
+  color: #FFFFFF;
+  padding: 1.15rem 1.5rem;
+  border-radius: .5rem;
+  transition: .3s;
+  box-shadow: 0 8px 24px hsla(var(--hue), var(--sat), var(--lig), .25);
+}
+
+.c-button i {
+  font-size: 1.25rem;
+}
+
+.c-button:hover {
+  background-color: var(--first-color-alt);
+}
+
+.c-button__small {
+  padding: .75rem;
+  box-shadow: none;
+}
+
+.c-button__gary {
+  background-color: var(--text-color-lighten);
+  color: var(--title-color);
+}
+
+.c-button__gary:hover {
+  background-color: var(--text-color-light);
+}
+
+/* 3D button */
+.c-button-3d label {
+  position: relative;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+.c-button-3d label input {
+  appearance: none;
+  display: none;
+}
+.c-button-3d label span {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background:  linear-gradient(#555353, #363535, #303030);
+  border: 2px solid #222222;
+  border-radius: 6px;
+  box-shadow: inset 0 5px 1px rgba(0, 0, 0, .35),
+  0 5px 5px  rgba(0, 0, 0, .5),
+  0 15px 25px  rgba(0, 0, 0, .35);
+}
+.c-button-3d label input:checked ~ span {
+  box-shadow: inset 0 2px 2px rgba(0, 0, 0, .35),
+  inset 0 5px 5px  rgba(0, 0, 0, .5),
+  inset 0 15px 25px  rgba(0, 0, 0, .35);
+}
+.c-button-3d label span::before {
+  content: '';
+  position: absolute;
+  inset: 5px 3px;
+  border-top: 1px solid #CCCCCC;
+  filter: blur(2px);
+}
+.c-button-3d label i {
+  position: relative;
+  z-index: 10;
+  font-size: 1.25rem;
+  color: #111111;
+}
+.c-button-3d label input:checked ~ i {
+  color: #FFFFFF;
+  text-shadow: 0 0 5px #219cf3,
+  0 0 8px #219cf3;
+}
+
+/* THEME BUTTON */
+
+/* .c-button-theme {
+  display: block;
+} */
+
+.c-button-theme label {
+  display: block;
+  position: relative;
+  left: -30px;
+  width: 50px;
+  height: 30px;
+  /* background: #3e3e3e; */
+  box-shadow: 0 0 0 3px #303030;
+  border-radius: 75px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+
+.c-button-theme label input {
+  appearance: none;
+}
+.c-button-theme span {
+  position: absolute;
+  left: 0;
+  width: 35px;
+  height: 35px;
+  background: url(../../../images/common/_coffee-cup2.png);
+  background-size: auto 35px;
+  background-repeat: no-repeat;
+  transform: rotate(-180deg);
+  transition: .3s;
+  transform-origin: 13px;
+}
+.c-button-theme label input:checked ~ span {
+  left: 25px;
+  background: url(../../../images/common/_coffee-cup.svg);
+  background-size: auto 35px;
+  background-repeat: no-repeat;
+  transform: rotate(360deg);
+}
+.c-button-theme label text {
+  position: absolute;
+  top: 5px;
+  left: -35px;
+  font-size: 2px;
+  font-family: console;
+  color: #FFFFFF;
+  /* font-size: 3em; */
+  filter: drop-shadow(0 0 15px #FFFFFF);
+  transition: .5s;
+}
+.c-button-theme label text:last-child {
+  position: absolute;
+  top: 5px;
+  left: initial;
+  right: -35px;
+}
+
+
+
+
+
+
+
+/* .c-button-theme:checked ~ span {
+  left: 50px;
+  background: url(../../../images/common/_coffee-cup2.png);
+  background-size: auto 50px;
+  background-repeat: no-repeat;
+  transform: rotate(360deg);
+} */
+
+/* For large devices */
+@media screen and (min-width: 576px) {
+  .c-button-3d {
+    position: absolute;
+    left: 2.5rem;
+  }
+}
+/* For large devices */
+@media screen and (min-width: 992px) {
+  .c-button-3d {
+    position: initial;
+  }
+}

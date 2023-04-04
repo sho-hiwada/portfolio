@@ -1,0 +1,26 @@
+.p-footer {
+  text-align: right;
+  padding: 50px 80px;
+}
+
+.p-footer__text {
+  font-size: 18px;
+  font-family: "Montserat-Regular.ttf";
+}
+
+@media screen and (max-width: 795px) {
+  .p-footer {
+    padding: 20px 80px;
+  }
+}
+
+@media screen and (max-width: 375px) {
+  .p-footer {
+    text-align: right;
+    padding: 30px;
+  }
+
+  .p-footer__text {
+    font-size: 15px;
+  }
+}

@@ -1,0 +1,36 @@
+.js-display-show {
+  /* width: 100%;        横幅いっぱい */
+  /* margin: 0 0 50px;   下方向に適度な余白 */
+  opacity: 0;
+  transition-duration: 1000ms;
+  transition-property: opacity, transform;
+}
+
+.js-display-show2 {
+  /* width: 100%;        横幅いっぱい */
+  /* margin: 0 0 50px;   下方向に適度な余白 */
+  opacity: 0;
+  transition-duration: 1000ms;
+  transition-property: opacity, transform;
+}
+
+.is-fadeIn-up {
+  transform: translate(0, 50px);
+}
+
+.is-fadeIn-down {
+  transform: translate(0, -50px);
+}
+
+.fis-fadeIn-left {
+  transform: translate(-50px, 0);
+}
+
+.is-fadeIn-right {
+  transform: translate(50px, 0);
+}
+
+.is-visible {
+  opacity: 1;
+  transform: translate(0, 0);
+}

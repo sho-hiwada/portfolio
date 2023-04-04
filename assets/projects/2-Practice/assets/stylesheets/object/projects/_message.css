@@ -1,0 +1,115 @@
+.p-message__inner {
+  display: flex;
+  align-items: center;
+  padding: 50px 0;
+}
+
+.p-message__backGround {
+  flex-basis: 650px;
+  margin-right: 60px;
+}
+
+.p-message__backTitle {
+  position: relative;
+  /* 変更した */
+  display: inline-block;
+  white-space: nowrap;
+  top: 20%;
+  left: 5%;
+  font-size: 110px;
+  font-weight: bold;
+  color: #000000;
+  z-index: 2;
+}
+
+.p-message__titleWrap {
+  flex: 1;
+  padding: 30px;
+}
+
+.p-message__bodyTitle {
+  margin-top: 20px;
+}
+
+.p-message__bodyText {
+  margin-top: 20px;
+}
+
+.p-message__logoText {
+  width: 75%;
+  font-size: 30px;
+  color: #f08080;
+  font-family: 'Homemade_Apple';
+  text-align: right;
+  margin-top: 60px;
+  margin-right: 100px;
+  margin-left: auto;
+  transform: rotate(-10deg);
+}
+
+@media screen and (max-width: 1125px) {
+  .p-message__inner {
+    padding: 50px;
+  }
+
+  .p-message__backGround {
+    display: none;
+  }
+
+  .p-message__bodyText {
+    font-size: 120%;
+  }
+
+  .p-message__logoText {
+    margin-right: 30px;
+  }
+}
+
+
+@media screen and (max-width: 795px) {
+  .p-message__inner {
+    position: relative;
+    padding: 80px 10%;
+  }
+
+  .p-message__titleWrap {
+    padding: 0;
+  }
+
+  .p-message__backGround {
+    display: block;
+    position: absolute;
+    width: 100%;
+    top: 200px;
+    z-index: -5;
+  }
+
+  .p-message__backTitle {
+    left: 0;
+    font-size: 70px;
+    color: #f5f5f5;
+    font-family: "Montserrat-Bold.ttf";
+  }
+}
+
+@media screen and (max-width: 375px) {
+  .p-message__inner {
+    padding: 80px 40px;
+  }
+
+  .p-message__bodyText {
+    font-size: 100%;
+  }
+
+  .p-message__backTitle {
+    font-size: 50px;
+    margin-top: 50px;
+  }
+
+  .p-message__logoText {
+    width: 100%;
+    font-size: 20px;
+    margin-top: 30px;
+    margin-right: 0;
+  }
+}

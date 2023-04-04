@@ -1,0 +1,11 @@
+.l-header {
+  width: 100%;
+  position: fixed;
+  top: 0;
+}
+
+@media screen and (min-width: 796px) {
+  .l-header {
+    padding: 10px 20px;
+  }
+}

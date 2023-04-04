@@ -1,0 +1,38 @@
+.c-container {
+  max-width: 968px;
+  margin-left: 1.5rem;
+  margin-right: 1.5rem;
+}
+
+.c-grid {
+  display: grid;
+  gap: 1.5rem;
+}
+
+.c-section {
+  padding: 4.5rem 0 2rem;
+}
+
+/*=============== BREAKPOINTS ===============*/
+/* For small devices */
+@media screen and (max-width: 320px) {
+  .c-container {
+    margin-left: 1rem;
+    margin-right: 1rem;
+  }
+}
+
+
+/* For medium devices */
+
+
+/* For large devices */
+@media screen and (min-width: 992px) {
+  .c-container {
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .c-grid {
+    gap: 2.5rem;
+  }
+}
